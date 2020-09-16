@@ -1,0 +1,18 @@
+
+name: Docker CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: buildImage
+        run:  docker build -t testimpot .
+      - name: testUnit
+        run:  docker run testimport
