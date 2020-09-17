@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: buildImage
-        run:  docker build . --file Dockerfile--tag impotTest:V1
+        run:  docker build . --file Dockerfile --tag impottest:V1
       - name: testUnit
         run:  docker run testimport
