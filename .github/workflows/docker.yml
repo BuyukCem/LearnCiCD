@@ -15,4 +15,4 @@ jobs:
       - name: buildImage
         run:  docker build . --file Dockerfile --tag impottest:V1
       - name: testUnit
-        run:  docker run testimport
+        run:  docker run impottest:V1
