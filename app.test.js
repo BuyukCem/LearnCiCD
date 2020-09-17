@@ -11,9 +11,6 @@ describe('Imposition', () => {
         test('couple marié ou pacsé, deux enfants mineurs avec 55 950 ', () => {
             expect(derterminationImpot(55950, 3)).toBe(2833)
         })
-        test('couple marié ou pacsé, cinq enfants mineurs avec 60 500 ', () => {
-            expect(derterminationImpot(60500, 3)).toBe(12,)
-        })
     })
 
     describe('Determination des part d\'impot', () => {
